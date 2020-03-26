@@ -1,0 +1,31 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h1>哈哈哈哈，我爱中华人民共和国</h1>
+    </body>
+</html>
+
+<?xml version="1.0" encoding="utf-8" ?>
+<School type="online" loc="beijing">
+    <!-- xmlns:xml name space的缩写 -->
+    <Student xmlns:name="http://my_student">
+        <name>haha</name>
+        <age>18</age>
+        <!-- 实体引用可以解决保留字符的的引用 -->
+        <score>&gt;</score>
+    </Student>
+
+    <Student desc="PythonStudent">
+        <name><![CDATA[haha>>kkk<<<]]></name>
+        <age>18</age>
+    </Student>
+<!-- Hello World! -->
+    <Student>
+        <name>haha</name>
+        <age>18</age>
+    </Student>
+</School>
