@@ -1,0 +1,10 @@
+2019-12-23 23:53:10,760-DEBUG-debug message
+2019-12-23 23:53:10,761-DEBUG-info message
+2019-12-23 23:53:10,761-DEBUG-warning message
+2019-12-23 23:53:10,761-DEBUG-error message
+2019-12-23 23:53:10,761-DEBUG-critical message
+2019-12-23 23:57:29,809-DEBUG-debug message
+2019-12-23 23:57:29,809-INFO-info message
+2019-12-23 23:57:29,809-WARNING-warning message
+2019-12-23 23:57:29,809-ERROR-error message
+2019-12-23 23:57:29,809-CRITICAL-critical message

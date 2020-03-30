@@ -1,0 +1,19 @@
+<School loc="beijing" type="online">
+    
+    <Student>
+        <name test="hahahaha">haha</name>
+        <age>18</age>
+        
+        <score>&gt;</score>
+    <ADDer a="b">&#25105;&#21152;&#30340;</ADDer><ADDer a="b">&#25105;&#21152;&#30340;</ADDer></Student>
+
+    <Student desc="PythonStudent">
+        <name test="haha&gt;&gt;kkk&lt;&lt;&lt;haha&gt;&gt;kkk&lt;&lt;&lt;">haha&gt;&gt;kkk&lt;&lt;&lt;</name>
+        <age>18</age>
+    </Student>
+
+    <Student>
+        <name test="hahahaha">haha</name>
+        <age>18</age>
+    </Student>
+</School>
