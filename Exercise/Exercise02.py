@@ -141,7 +141,7 @@ replace替换
 """
 # fileName = input(r"请输入你要打开的文件名:")
 # repWord = input("请输入你要替换的字符:")
-# newWord = input("请输入替换的新的字符串")
+# newWord = input("请输入替换的新的字符串:")
 #
 #
 # def file_replace(file_name, rep_word, new_word):
@@ -170,8 +170,8 @@ replace替换
 做出统计
 """
 # import os
-# # 获取当前文件夹下面所有的文件
-# # os.curdir表示当前目录curdir: currentdirectory
+# 获取当前文件夹下面所有的文件
+# os.curdir表示当前目录curdir: currentdirectory
 # typeDict = dict()
 #
 #
@@ -197,10 +197,10 @@ replace替换
 # all_type_files(os.curdir, typeDict)
 # for each_type in typeDict:
 #     print("该文件夹下面有类型为'{}'的文件{}个".format(each_type, typeDict[each_type]))
-
+#
 
 """
-编写一个程序，计算当前文件夹下面所有问价安的大小
+编写一个程序，计算当前文件夹下面所有文件的大小
 打开当前文件夹
 获取所有的文件，和文件大小
 保存我们获到的数据，然后打印出来
@@ -231,7 +231,7 @@ replace替换
 """ 
 编写一个程序，用户输入文件名以及开始搜索的路径，搜索该文件是否存在，如果遇到文件夹，则进入该文件夹继续搜索
 input 去接收用户输入的文件名和开始搜索的路径
-os.path.isdir去判断是不是文件夹，如果是的话，就需要进入该问加价继续搜索，循环调用一下我们的函数来实现
+os.path.isdir去判断是不是文件夹，如果是的话，就需要进入该文件夹继续搜索，循环调用一下我们的函数来实现
 """
 # import os
 #
