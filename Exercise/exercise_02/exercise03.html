@@ -1,0 +1,63 @@
+<!--table表格的使用-->
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- 这是一个注释 -->
+    <meta charset="UTF-8">
+    <title>课程表</title>
+</head>
+<body>
+    <table border="1">
+        <!--定义表格标题-->
+        <caption>课程表</caption>
+
+        <tr>
+            <!--colspan水平合并2个单元格-->
+            <th colspan="2">时间\日期</th>
+            <th>周一</th>
+            <th>周二</th>
+            <th>周三</th>
+            <th>周四</th>
+            <th>周五</th>
+        </tr>
+        <!-- 上午 -->
+        <tr>
+            <!--rowspan水平合并2个单元格-->
+            <th rowspan="2">上午</th>
+            <th>8:00-9:50</th>
+            <th>语文</th>
+            <th>语文</th>
+            <th>语文</th>
+            <th>语文</th>
+            <th>语文</th>
+        </tr>
+        <tr>
+            <th>10:00-12:00</th>
+            <th>数学</th>
+            <th>数学</th>
+            <th>数学</th>
+            <th>数学</th>
+            <th>数学</th>
+        </tr>
+
+        <!-- 下午 -->
+        <tr>
+            <!--rowspan水平合并2个单元格-->
+            <th rowspan="2">下午</th>
+            <th>14:00-15:00</th>
+            <th>语文</th>
+            <th>语文</th>
+            <th>语文</th>
+            <th>语文</th>
+            <th>语文</th>
+        </tr>
+        <tr>
+            <th>16:00-17:30</th>
+            <th>数学</th>
+            <th>数学</th>
+            <th>数学</th>
+            <th>数学</th>
+            <th>数学</th>
+        </tr>
+    </table>
+</body>
+</html>
