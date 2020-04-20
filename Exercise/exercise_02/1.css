@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+}
+/*margin:0 auto;表示上下外边框宽度为0，左右根据窗口自动调节，块即可居中显示*/
+div{
+    margin:0 auto;
+}
+ul{
+    list-style:none;
+}
+/*导航菜单*/
+.daohang{
+    width:80%;
+    height:70px;
+    background-color:yellow;
+}
+
+.top-menu li{
+    display:block;
+    float:left;
+    /*设置行高：*/
+    line-height:70px;
+    margin:0 20px;
+    font-size:20px
+}
+
+/*中部*/
+.middle{
+    width:80%;
+    height:1000px;
+    background-color:palegreen;
+}
+
+/*文章栏*/
+.txt{
+    width:70%;
+    height:960px;
+    background-color:pink;
+    /*将块挂在父块顶部左边*/
+    float:left;
+    margin:8px 3px
+}
+.txt ul li span{
+    /*font-weight 属性设置文本的粗细。*/
+    font-weight:bold;
+    /*display:inline-block;表示使行内元素变成块级元素*/
+    /*display:inline-block;*/
+    color:cyan;
+
+}
+
+.txt ul li{
+    display:block;
+    margin:20px 10px;
+}
+
+/*右侧栏*/
+.r_lan{
+    width:29%;
+    height:960px;
+    background-color:greenyellow;
+    /*将块挂在父块顶部左边*/
+    float:left;
+    margin:8px 3px
+}
+
+/*博主*/
+.user_name{
+    width:90%;
+    height:310px;
+    margin:0 auto;
+    background-color:slateblue;
+    margin-top:5px
+}
+.user_name ul li{
+    display:block;
+    margin:10px;
+}
+/*文章分类*/
+.text-c{
+    width:90%;
+    height:310px;
+    margin:0 auto;
+    background-color:seagreen;
+    margin-top:5px;
+}
+.text-c ul li{
+    display:block;
+    height:70px;
+    width:90%;
+}
+.text-c ul li h2{
+    line-height:70px;
+    text-align:center;
+    color:yellow;
+}
+/*阅读排行*/
+.top{
+    width:90%;
+    height:310px;
+    margin:0 auto;
+    background-color:gray;
+    margin-top:5px
+}
+.top ul li{
+    line-height:70px;
+    text-align:center;
+    color:yellow;
+}
+.top ul li a{
+    font-size:30px;
+    font-weight:bold;
+    color:salmon;
+}
+/*底部*/
+.bt{
+    width:80%;
+    height:150px;
+    background-color:cyan;
+}
+
+.bt ul li{
+    width:100%;
+    height:50px;
+    margin:0 auto;
+    text-align:center;
+}
+.bt ul li a{
+    line-height:50px;
+}
+.bt ul li span{
+    line-height：50px;
+}
