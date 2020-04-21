@@ -1,0 +1,51 @@
+<!--table表格的使用-->
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- 这是一个注释 -->
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .box{
+            width:400px;
+            height:400px;
+            margin:200px auto;
+        }
+        #ts{
+            color:yellowgreen;
+            font-size:12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="#">
+            <!-- onblur 属性在元素失去焦点时触发。 -->
+            <!--  提示：onblur 属性与 onfocus 属性相反。-->
+            用户名:<input type="text" name="username" id="name" onblur="func(this)">
+            <span id="ts">请输入邮箱</span><br>
+            密码:<input type="password" name="pwd">
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        function func(obj){
+            var name = obj.value;
+            //console.log(name);
+            var reg = /\w+@\w+\.(com|cn|net)/;
+            if(!reg.test(name)){
+                ts.innerHTML = '你输入的邮箱不符合规则';
+                ts.style.color = 'red';
+                obj.style.color = 'red';
+            }else{
+                ts.innerHTML = 'OK';
+                ts.style.color = 'greenyellow';
+                obj.style.color = 'greenyellow';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!--table表格的使用-->
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- 这是一个注释 -->
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #box{
+            width:100%;
+            height:100%;
+            /*rgb代表红绿蓝三色，a代表透明度*/
+            /*background-color:rgb(0,0,0);*/
+            background-color:rgba(0,0,0,0.3);
+            position:fixed;
+            /*z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
+            注释：元素可拥有负的 z-index 属性值。
+            注释：Z-index 仅能在定位元素上奏效（例如 position:absolute;）！
+            z-index大的元素会覆盖z-index小的元素*/
+            z-index:1;
+            left:0;
+            top:0;
+            /*overflow 属性规定当内容溢出元素框时发生的事情。*/
+            overflow:auto;
+            /*display:none;*/
+        }
+        #form{
+            background-color:white;
+            width:25%;
+            margin:5% auto 15% auto;
+            /*boder:width style color*/
+            border:1px solid #888;
+            font-size:18px;
+        }
+        input[type=text],input[type=password]{
+            width:100%;
+            padding:12px 20px;
+            margin:8px 0;
+            border:1px solid #ccc;
+            /*display:inline-block;行内块元素不自动换行*/
+            display:inline-block;
+            /*content-box:宽度和高度分别应用到元素的内容框。
+            在宽度和高度之外绘制元素的内边距和边框。
+            border-box:为元素设定的宽度和高度决定了元素的边框盒。
+            就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。
+            通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。
+            inherit:规定应从父元素继承 box-sizing 属性的值。
+            */
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    <button class="tan">用户注册</button>
+    <!--点击注册按钮弹出注册框-->
+    <div id="box">
+        <form id="form">
+            用户名:<input type="text" name=""><br>
+            密码:<input type="password" name=""><br>
+            确认密码:<input type="password" name=""><br>
+            <input type="submit" name="" value="提交">
+            <input type="reset" name="" value="重置">
+        </form>
+    </div>
+</body>
+</html>

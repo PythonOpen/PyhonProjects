@@ -4,9 +4,71 @@
 <head><!-- 这是一个注释 -->
     <meta charset="UTF-8">
     <title>点名器</title>
-
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        #box{
+            width:500px;
+            height:300px;
+            background-color:pink;
+            position:fixed;
+            left:35%;
+            top:40%;
+        }
+        #name{
+            width:350px;
+            height:200px;
+            background-color:yellowgreen;
+            text-align:center;
+            margin:20px auto;
+            font-size:100px;
+            line-height:200px;
+        }
+        #start{
+            width:80px;
+            height:30px;
+            margin-left:110px;
+            font-size:15px;
+        }
+        #stop{
+            width:80px;
+            height:30px;
+            margin-left:110px;
+            font-size:15px;
+        }
+    </style>
 </head>
 <body>
+    <div id="box">
+        <div id="name"></div>
+        <button id="start">START</button>
+        <button id="stop">STOP</button>
+    </div>
 
+    <script type="text/javascript">
+        var names = document.getElementById('name');
+        var starts = document.getElementById('start');
+        var stops = document.getElementById('stop');
+        var nm = ['程普','黄盖','张飞','关羽','赵云','黄忠','张辽','韩当','祖茂','于禁','张郃','李典','乐进','马超','徐晃','曹操','貂蝉','华佗','刘备','孙权'];
+        var into;
+        //START按钮的点击事件
+        starts.onclick = function(){
+            //判断是否已经点击开始按钮。
+            if(into!= null) return;
+            into = setInterval(function(){
+                //通过随机函数生成的随机数作为索引的下标从数组中取值写入页面
+                names.innerHTML = nm[rand(0,nm.length-1)];
+            },100);
+        };
+        stops.onclick = function(){
+            clearInterval(into);
+            into = null;
+        };
+        function rand(x,y){
+            return Math.floor(Math.random()*(y-x)+x);
+        };
+    </script>
 </body>
 </html>
