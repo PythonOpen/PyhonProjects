@@ -6,6 +6,7 @@
 /*margin:0 auto;表示上下外边框宽度为0，左右根据窗口自动调节，块即可居中显示*/
 div{
     margin:0 auto;
+    overflow: auto;
 }
 ul{
     list-style:none;
@@ -35,12 +36,12 @@ ul{
 
 /*文章栏*/
 .txt{
-    width:70%;
+    width:63%;
     height:960px;
     background-color:pink;
     /*将块挂在父块顶部左边*/
     float:left;
-    margin:8px 3px
+    margin:8px 3px;
 }
 .txt ul li span{
     /*font-weight 属性设置文本的粗细。*/
@@ -48,17 +49,17 @@ ul{
     /*display:inline-block;表示使行内元素变成块级元素*/
     /*display:inline-block;*/
     color:cyan;
-
 }
 
 .txt ul li{
     display:block;
     margin:20px 10px;
+    /*overflow:scroll;*/
 }
 
 /*右侧栏*/
 .r_lan{
-    width:29%;
+    width:32%;
     height:960px;
     background-color:greenyellow;
     /*将块挂在父块顶部左边*/
@@ -72,7 +73,7 @@ ul{
     height:310px;
     margin:0 auto;
     background-color:slateblue;
-    margin-top:5px
+    margin-top:5px;
 }
 .user_name ul li{
     display:block;
@@ -90,9 +91,12 @@ ul{
     display:block;
     height:70px;
     width:90%;
+    margin-left:20px;
 }
 .text-c ul li h2{
     line-height:70px;
+    width:100px;
+    margin:0px auto;
     text-align:center;
     color:yellow;
 }
@@ -102,7 +106,7 @@ ul{
     height:310px;
     margin:0 auto;
     background-color:gray;
-    margin-top:5px
+    margin-top:5px;
 }
 .top ul li{
     line-height:70px;

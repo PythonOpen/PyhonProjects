@@ -1,4 +1,20 @@
 # Python
+ - 前提知识
+    - url
+    - http协议
+    - web前端，html,css,js
+    - ajax
+    - re,xpath
+    - xml
+    
+- 两大特征
+    - 能按作者要求下载数据或者内容
+    - 能自动在网络上流窜
+- 三大步骤:
+    - 下载网页
+    - 提取正确的信息
+    - 根据一定规则自动跳到另外的网页上执行上两步内容
+
 - 爬虫分类
     - 通用爬虫
     - 专用爬虫（聚焦爬虫）
@@ -10,9 +26,13 @@
 # 2.urllib
 - 包含模块
     - urllib.request:打开和读取urls
-    - urllib.error:
+    - urllib.error:包含urllib.request产生的常见的错误，使用try捕捉
     - urllib.parse:包含解析url的方法
     - urllib.robotparse:解析robot.txt
+    
+-网页变啊名问题的解决
+    - chardet 可以自动检测页面文件的编码格式，但是，可能有误。
+    - 需要安装 conda install chardet
     
 - request.data的使用
     - 访问网络的两种方法
@@ -22,7 +42,7 @@
                 - Content-Type:application/x-www.form-urlencode
                 - Cotent-length:数据长度
                 - 简而言之，一般更改请求方法，请注意其他请求头部信息相适应
-            - urllib.parse.urlencode可以字符串自动转换换成上面的
+            - urllib.parse.urlencode可以将字符串自动转换换成上面的
             - 为了更多的设置请求信息，单纯的通过urlopen函数已经不太好哦啊用了
             - 需要利用request.Request
             

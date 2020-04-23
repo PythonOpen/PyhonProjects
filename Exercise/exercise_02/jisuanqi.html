@@ -1,0 +1,87 @@
+<!--table表格的使用-->
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- 这是一个注释 -->
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .box{
+            width:250px;
+            height:300px;
+            margin:10% auto;
+            background-color:yellowgreen;
+        }
+        .btn{
+            /*把按钮边框去掉
+            outline （轮廓）是绘制于元素周围的一条线，
+            位于border边框边缘的外围，可起到突出元素的作用。*/
+            outline:none;
+            /*cursor 属性规定要显示的光标的类型（形状）
+              pointer为手型*/
+            cursor:pointer;
+            font-size:20px;
+            height:45px;
+            margin:5px 0px 5px 10px;
+            width:45px;
+        }
+        #display{
+            font-size:30px;
+            line-height:45px;
+            width:230px;
+            margin:10px 5px 5px 5px;
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form>
+            <input type="text" id="display"><br>
+            <input type="button" class="btn" value="7" onclick="get(this.value)">
+            <input type="button" class="btn" value="8" onclick="get(this.value)">
+            <input type="button" class="btn" value="9" onclick="get(this.value)">
+            <input type="button" class="btn" value="C" onclick="qing()"><br>
+
+            <input type="button" class="btn" value="4" onclick="get(this.value)">
+            <input type="button" class="btn" value="5" onclick="get(this.value)">
+            <input type="button" class="btn" value="6" onclick="get(this.value)">
+            <input type="button" class="btn" value="+" onclick="get(this.value)"><br>
+
+            <input type="button" class="btn" value="1" onclick="get(this.value)">
+            <input type="button" class="btn" value="2" onclick="get(this.value)">
+            <input type="button" class="btn" value="3" onclick="get(this.value)">
+            <input type="button" class="btn" value="-" onclick="get(this.value)"><br>
+
+            <input type="button" class="btn" value="0" onclick="get(this.value)">
+            <input type="button" class="btn" value="*" onclick="get(this.value)">
+            <input type="button" class="btn" value="/" onclick="get(this.value)">
+            <input type="button" class="btn" value="=" onclick="count()"><br>
+        </form>
+    </div>
+    <script type="text/javascript">
+        var txt = document.getElementById('display')
+        //清空文本框方法
+        function qing(){
+            console.log('清空文本框');
+            txt.value='';
+        }
+        //添加数值
+        function get(value){
+            console.log(value)
+            txt.value += value;
+            txt.value = txt.value.toString().substring(0,13);
+        }
+        //计算方法
+        function count(){
+            //eval() 函数可计算某个字符串，并执行其中的的 JavaScript代码。
+            var str = eval(txt.value).toString();
+            txt.value=str.substring(0,13);
+            console.log(txt.value);
+        }
+    </script>
+</body>
+</html>
