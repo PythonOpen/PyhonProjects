@@ -37,13 +37,18 @@
 - request.data的使用
     - 访问网络的两种方法
         - get
+            - 利用参数给服务器传递信息
+            - 参数为dict，然后用parse编码
         - post
+            - 一般向服务器传递参数使用
+            - post是把信息自动加密处理
+            - 我们如果使用post信息，需要用到data参数。
             - 使用post，意味着HTTP的请求头可能需要更改：
                 - Content-Type:application/x-www.form-urlencode
-                - Cotent-length:数据长度
-                - 简而言之，一般更改请求方法，请注意其他请求头部信息相适应
+                - Cotent-Length:数据长度
+                - 简而言之，一旦更改请求方法，请注意其他请求头部信息相适应
             - urllib.parse.urlencode可以将字符串自动转换换成上面的
-            - 为了更多的设置请求信息，单纯的通过urlopen函数已经不太好哦啊用了
+            - 为了更多的设置请求信息，单纯的通过urlopen函数已经不太好用了
             - 需要利用request.Request
             
         - urllib.error
