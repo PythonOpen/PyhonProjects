@@ -13,10 +13,10 @@ def youdao(key):
         "to": "AUTO",
         "smartresult": "dict",
         "client": "fanyideskweb",
-        "salt": "15777122008771",
-        "sign": "f9552aa61692d67290eb7cf12edf5a5c",
-        "ts": "1577712200877",
-        "bv": "ab57a166e6a56368c9f95952de6192b5",
+        "salt": "15878643244341",
+        "sign": "3aefc1d99e663eaaa327a855f71431bf",
+        "ts": "1587864324434",
+        "bv": "acc97416ef67184f42e5a4a03c3d52ab",
         "doctype": "json",
         "version": "2.1",
         "keyfrom": "fanyi.web",
@@ -36,7 +36,7 @@ def youdao(key):
         "Host": " fanyi.youdao.com",
         "Origin": " http://fanyi.youdao.com",
         "Referer": " http://fanyi.youdao.com/",
-        "User-Agent": " Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
     }
 
     req = request.Request(url=url, data=data, headers=headers)

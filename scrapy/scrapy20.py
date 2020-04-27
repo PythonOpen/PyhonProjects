@@ -1,4 +1,4 @@
-import time,random,hashlib
+import time, random, hashlib
 from urllib import request, parse
 
 '''
@@ -10,8 +10,9 @@ ts =  "" + (new Date).getTime()
 
 
 def getSalt():
-    salt = int(time.time()*1000)+random.randint(0,10)
+    salt = int(time.time()*1000)+random.randint(0, 10)
     return salt
+
 
 def getMd5(v):
     md5 = hashlib.md5()
@@ -29,7 +30,7 @@ def youdao(key):
     url = "http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule"
     salt = str(getSalt())
     sign = getMd5("fanyideskweb" + key + salt + "n%A-rKaT5fb[Gy?;N5@Tj")
-    ts= str(getTs())
+    ts = str(getTs())
     data = {
         "i": key,
         "from": "AUTO",
@@ -71,4 +72,4 @@ def youdao(key):
 
 
 if __name__ == "__main__":
-    youdao("girl")
+    youdao("女人")

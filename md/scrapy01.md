@@ -145,7 +145,7 @@
     - 一定会有url，请求方法，可能有数据
     - 一般使用json格式
     - 案例，爬豆瓣电影 案例21
-    
+
 # Requests-献给人类
 - HTTP for Humans,更简洁更友好
 - 继续了urllib的所有特征
